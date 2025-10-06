@@ -1,6 +1,13 @@
 require('dotenv').config();
 const tmi = require('tmi.js');
 const fs = require('fs');
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => res.send('✅ Twitch Word Bot is running!'));
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🌍 Web server running on port ${PORT}`));
 
 // Load word list
 const words = JSON.parse(fs.readFileSync('wordlist.json', 'utf8'));

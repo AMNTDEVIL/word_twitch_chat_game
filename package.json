@@ -1,16 +1,25 @@
 {
   "name": "twitch-word-bot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Twitch word bot for chat games",
+  "main": "bot.js",
   "scripts": {
+    "start": "node bot.js",
+    "build": "echo 'No build needed'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "twitch",
+    "bot",
+    "word",
+    "chat"
+  ],
+  "author": "AMNTDEVIL",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^17.2.3",
+    "express": "^5.1.0",
     "tmi.js": "^1.8.5"
   }
 }
+
